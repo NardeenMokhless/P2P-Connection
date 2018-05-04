@@ -2,13 +2,15 @@ import java.io.IOException;
 import java.net.*;
 
 public class MulticastPublisher extends  Thread {
-    private MulticastSocket socket; {
+    private MulticastSocket socket;
+    {
         try {
             socket = new MulticastSocket();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
     private InetAddress group;
     boolean moreQuotes = true;
     private byte[] buf;
