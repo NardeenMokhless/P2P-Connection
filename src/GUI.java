@@ -36,7 +36,8 @@ public class GUI extends JFrame {
                 dataStore.readFromFile();
             }
             if(buttonPressed == sendIP){
-                String myIP = "192.168.1.5";
+               // String myIP = "192.168.1.5";
+            	String myIP =  textField.getText();
                 MulticastPublisher multicastPublisher = new MulticastPublisher(myIP);
                 MulticastReceiver multicastReceiver = new MulticastReceiver(myIP);
                 ServerSocketReceiver serverSocketReceiver =  new ServerSocketReceiver();

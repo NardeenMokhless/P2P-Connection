@@ -66,13 +66,13 @@ public class MulticastReceiver extends  Thread {
             System.out.println("IP : " + received);
 
 
-            System.out.println("--------------------------");
-            for(int i=0;i<IPs.size();i++)
-            {
-                System.out.println(IPs.get(i));
-                System.out.println(IPs.get(i).length());
-            }
-            System.out.println("--------------------------");
+//            System.out.println("--------------------------");
+//            for(int i=0;i<IPs.size();i++)
+//            {
+//                System.out.println(IPs.get(i));
+//                System.out.println(IPs.get(i).length());
+//            }
+//            System.out.println("--------------------------");
 
             if(!IPs.contains(received))
             {
